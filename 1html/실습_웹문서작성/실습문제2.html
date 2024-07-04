@@ -6,11 +6,28 @@
   <title></title>
   <style>
     table, td, th {
-      border:1px solid #ccc;
+      /* CSS주석 */
+      /*border: 테두리를
+      1px : 두께
+      solid : 실선
+      border-collapse : 테이블과 셀을 분리
+      collapse :합치기
+      separace : 분리(기본)
+      */
+      border:1px dotted #ccc;
+      border-collapse: separate;
+      /*
       border-collapse: collapse;
+      */
     }
     td, th {
+      /* 테두리와 켄텐츠 사이의 공간 */
+      /* 상하 좌우*/
       padding:10px 20px;
+      /* 가로정렬*/
+      text-align: center;
+      /* 폰트두께*/
+      font-weight: bolder;
     }
     td:last-child{
       width:200px;
@@ -18,9 +35,29 @@
   </style>
 </head>
 <body>
-  <table>
-    
-  </table>
+  한줄 지우기 : ctrl + x
+  실행취소 : ctrl + z
+  줄 바뀌기: alt +위, 아래
+ table>(tr>td{샐$}*3)*4
+ <table>
+  <tr>
+    <th rowspan ="3">개인정보</th>
+    <th>이름</th>
+    <td></td>
+  </tr>
+  <tr>
+    <td>학과/학번</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>연락처</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>지원분야</td>
+    <td colspan="2"></td>
+  </tr>
+ </table>
 </body>
 </html>
 
