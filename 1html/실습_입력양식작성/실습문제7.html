@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문하기</title>
+
+    <style>
+        ul{
+            list-style: none;
+        }
+        li,input[type=radio]{
+            font-weight: 900;
+            line-height: 50px;
+            padding: 20px 0px;
+        
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>주문하기</h1>
+
+    <ul>
+        <li>
+            <label for="userName">고객명:</label><input type="text" id="userName"><br>
+            <label for="userName">전화번호:</label><input type="text" id="userName"><br>
+            <label for="userName">E-mail:</label><input type="email" id="userName">
+        </li>
+    </ul>
+
+    <fieldset>
+        <legend>피자 사이즈</legend>
+            <input type="radio" name="pizzasize" >Smail<br><br>
+			<input type="radio" name="pizzasize" >Medium<br><br>
+			<input type="radio" name="pizzasize" >Large
+    </fieldset>
+
+    <fieldset>
+        <legend>토핑 선택</legend>
+            <input type="checkbox" name="topping" >베이컨<br><br>
+			<input type="checkbox" name="topping" >치즈<br><br>
+			<input type="checkbox" name="topping" >양파<br><br>
+            <input type="checkbox" name="topping" >버섯
+    </fieldset>
+
+    <br>
+
+    <label for="">희망 배송 시간 : </label><input type="time">
+
+    <br><br>
+
+    <label for="">배송시 요청사항 : </label><textarea name="" id="" cols="25" rows="5"></textarea>
+
+    <br><br>
+
+
+    <button>주문하기</button>
+
+</body>
+</html>
