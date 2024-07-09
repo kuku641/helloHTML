@@ -9,8 +9,30 @@
        h1{
         color: #fff;
         background-color: blue;
-        /*블럭요소를 인라인요소로 변경*/
+        /*블럭요소를 인라인요소로 변경
+        block / inline(너비, 높이를 줘도 반영이 안됨)
+        inline-block*/
+        /* display 속성의 값
+        block : 한줄을 몽땅 차지
+        inline : 컨텐츠 영역 만큼 차지
+                영역을 가질 수 없음
+                (width, height값 지정 불가)
+        inline-block : 영역을 가질 수 있고
+                        한줄에 여러개의 요소가 출력 가능 */
+        /* width: 300px;
+        height: 100px; */
         display: inline-block;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 20px, 0px;
+       }
+       span{
+        border: 1px solid black;
+        width: 300px;
+        height: 100px;
+        /* 요소가 가지고 있는 형식을 변경 */
+        display:inline-block;
        }
        .red{
         color: red;
@@ -22,9 +44,22 @@
         /* 위아래 좌우 */
         margin: 0 auto; /* 박스 가운데정렬 */
        }
+       li{
+        border: 1px solid red;
+        width: 200px;
+        height: 50px;
+        display: inline-block;
+       }
     </style>
 </head>
 <body>
+    <span>span영억</span>
+    <ul>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+    </ul>
 <div>
     <h1>탐라국 입춘굿</h1>
 
