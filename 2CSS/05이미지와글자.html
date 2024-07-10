@@ -6,25 +6,56 @@
     <title>Document</title>
     <style>
         img{
-            /* 이미자와 글을 함께 출력 할때 사용 */
             float: right;
+            width: 300px;
         }
         .clear{
             clear: both;
         }
+        ul{
+            padding: 0px;
+            list-style: none;
+        }
+        li{
+            border: 1px solid;
+            /* display: inline-block; */
+            float: left;
+
+            /* 박스의 크기를 정할 때 테두리까지 포함 */
+            box-sizing: border-box;
+            /* 가로영역지정 */
+            width: 25%;
+            /* 세로영역지정및 가운데 정렬 */
+            height: 50px;
+            line-height: 50px;
+            
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+
     </style>
 </head>
 <body>
+    
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+    </ul>
 
-    <img src="images/apple-bg.jpg" width="100px">
+    <p class="clear"></p>
+    <img src="images/apple-bg.jpg" alt="" clear="float">
     
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores praesentium, et debitis voluptatum quisquam laudantium cumque dicta a delectus qui corrupti nostrum assumenda repudiandae vitae, quo corporis, eligendi ratione. Nemo?
     Magnam nihil cumque magni fugiat nam esse sint rerum, vitae illum quod fuga ipsum itaque corporis exercitationem fugit aperiam maxime non quidem a aliquid alias nobis animi unde quisquam. Dolor.
     Perferendis distinctio, dolores repudiandae nostrum in eveniet nobis qui cupiditate ratione incidunt libero, deserunt temporibus harum nam fugit porro dicta pariatur? Non nulla totam temporibus commodi. Quidem in error quas!
     Dolor amet aut eligendi aliquam ipsam, doloremque harum nam numquam maiores ratione recusandae voluptatem tenetur at dicta ad non est dolorem? Iste quam maiores, cum temporibus quibusdam illo quidem non!
     Nobis quis voluptate modi excepturi? Atque nulla dolorum nesciunt quos? Praesentium doloribus labore dolores mollitia nulla recusandae sunt inventore sapiente. Quod minus hic similique dolorum exercitationem porro, velit excepturi accusamus.
-    <p>clear</p>
-    <img class="clear" src="images/book-icon.png" alt="">
-    
+    <p class="clear"></p>
+    <img class="clear" src="images/galic.jpg" alt="">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda asperiores optio consequatur deserunt illo numquam magni mollitia tenetur, laudantium quia porro quam sint qui ullam, quos, eius beatae recusandae cupiditate!
+
 </body>
 </html>

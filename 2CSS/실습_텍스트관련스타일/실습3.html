@@ -6,52 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>꿀사과</title>
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
         ul{
-            /* 목록 스타일 제거 */
-            list-style: none;
-            /* 상하좌우 똑같이 적용 */
+            /* 목록태그가 가지고 있는 기본 스타일 제거 */
             padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        div{
+            /* 마진을 이용한 가운데 정렬
+                블럭요소의 가운데정렬, 블럭요소의 가로너비가 정해져 있어야 함 */
+            width: 600px;
+            margin: auto;
+            /* border: 1px solid; */
         }
         li{
-            border: 1px solid #ccc;
-            width: 600px;
-            height: 150px;
-            /* 줄간격 */
-            line-height: 30px;
+            border: 1px solid #333;
             text-align: center;
+            line-height: 1.8rem;
+            font-weight: 800;
         }
         .top{
-            color: #eee;
-            background-color: #000;
+            /* 배경색*/
+            background-color: black;
+            /* 글자색 */
+            color: white;
+            /* 글자크기 */
             font-size: 0.8rem;
+            font-weight: 800;
+
+            /* 요소의 높이를 지정 */
             height: 30px;
             line-height: 30px;
-            font-weight: 900;
+
+            /* 가로정렬 */
             text-align: left;
         }
         p{
-            color: rgba(200, 0, 0, 0.688);
-            font-weight: 800;
             font-size: 1.5rem;
+            color: red;
             text-align: center;
+            font-weight: 700;
         }
         .blue{
             color: blue;
-            font-weight: 700;
-        }
-        div{
-            /* 
-            블럭요소의 가운데 정렬 
-            1. 너비를 지정
-            2. 마진을 적용
-            */
-            width: 600px;
-            margin: 0px auto;
-            /* border: 5px solid red; */
         }
     </style>
 </head>
@@ -59,6 +56,7 @@
     <div>
     <img src="../images/top.jpg" alt="가정용꿀사과" width="600px">
     <ul>
+        <!-- &nbsp;는 공백을 의미 -->
         <li class="top">&nbsp;확인하세요</li>
         <li>
             <p>주문 및 배송</p>
