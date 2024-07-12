@@ -1,0 +1,93 @@
+#wrapper{
+    width: 800px;
+    margin: auto;
+  }
+  header{
+    width: 100%;
+    height: 100px;
+    background: url("../images/nav2.png") no-repeat right top;
+    background-size: 20% 100%;
+    background-color: #f46075;
+  }
+  ul{
+    list-style: none;
+    /* 블럭요소의 크기를 지정, margin속성을 auto */
+    width: 500px;
+    margin: 0px auto;
+    padding: 0px;
+  }
+  li{
+    float: left;
+    width: 100px;
+    /* height: 100%;
+    line-height: 100px; */
+    text-align: center;
+
+    color: white;
+    
+    border-right: 2px solid;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+  }
+  h2{
+    border-left: 5px solid;
+    padding-left: 10px;
+    /* 세로정렬 요소의 높이와 줄간격을 동일하게 지정 */
+    height: 40px;
+    line-height: 40px;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  section{
+    width: 80%;
+    height: 700px;
+    float: left;
+  }
+  /* 컨텐츠가 없는 경우, 높이영역이 0으로 잡히므로
+  배경이미지를 넣어도 화면에 나오지 않아요!!! */
+  aside{
+    border: 1px solid;
+    width: 20%;
+    height: 650px;
+    background-color: aqua;
+
+    background: url("../images/3.png") no-repeat right bottom;
+    float: right;
+    /* border: 1px solid; */
+  }
+  footer{
+    clear: both;
+    text-align: center;
+    background-color: #f46075;
+    line-height: 100px;
+    color: white;
+  }
+  /* 첫번째 자식 요소 */
+  li:first-child{
+    border-color: red;
+  }
+  /* 몇번째 자식 요소 */
+  li:nth-child(2){
+    border-color: orange;
+  }
+  /* 마직막 자식 요소 */
+  li:last-child{
+    border: 0px;
+  }
+  article{
+    border: 1px dashed #333;
+    margin-bottom: 10px;
+    /* 상하 좌우 */
+    padding: 0px 10px;
+    margin-left: 10px;
+    width: 48%;
+    float: left;
+    height: 280px;
+  }
